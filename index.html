@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="all">        
-        <script type="text/javascript" src="assets/scripts/main.js"></script>       
-        <link rel="icon" href="assets/images/favicon.ico" sizes="16x16">
-        <title>Js-CMS - Welcome to JS-CMS</title>
+        <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" media="all">        
+        <script type="text/javascript" src="/assets/scripts/main.js"></script>       
+        <link rel="icon" href="/assets/images/favicon.ico" sizes="16x16">
+        <title>undefined - Welcome to JS-CMS</title>
     </head>
 <body class="frontPage">
   <nav class="navbar navbar-expand-md fixed-top">
@@ -15,24 +15,61 @@
       <span class="navbar-toggler-icon"></span>
     </button>  
     <div class="inner">
-      <a class="navbar-brand" href=""><img width="120px" src="assets/images/logo.png" /></a>
+      <a class="navbar-brand" href=""><img width="120px" src="/assets/images/logo.jpg" /></a>
       <div class="collapse navbar-collapse" id="mainMenu">        
-        <ul class='navbar-nav'>
-                                <li><a href="">Home</a></li><li><a href="about-us">About Us</a></li><li><a href="posts">Posts</a></li>
-                                </ul>
+        <ul class='navbar-nav'><li><a href="/">בית</a></li>
+<li><a href="/about-us">מי אנחנו</a></li>
+<li><a href="/posts">טיפים מקצועיים</a></li>
+<li><a href="/posts">תפילה למשה</a></li>
+<li><a href="/posts">מזכרות ושירונים</a></li>
+<li><a href="/posts">דוגמאות לעבודות</a></li>
+<li><a href="/posts">לקוחות מספרים</a></li>
+<li><a href="/posts">צור קשר</a></li>
+</ul>
       </div>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
   </nav>
 
     <main id='main' role="main" class="container">
       <div class="starter-template">
         <h1>Welcome to JS-CMS</h1>          
-          This is front page
+          
+<style type="text/css">
+    body { padding:0; margin:0;}
+    #logo { position: relative; opacity: 0; right:-250; width:250px;height:250px; }
+    #moshe { position: relative; opacity: 0; top: 33px; right:-250; width:250px;height:250px; border-radius: 50px; }
+</style>
+<div>
+    <div>
+        <img id='moshe' src='/assets/images/moshe.jpeg' />
+        <img id='logo' src='/assets/images/logo.jpg' />        
+    </div>
+    <div id="work">
+        <div id="i1">
+            njzurho
+        </div>
+        <div id="i2">
+        </div>
+    </div>
+</div>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.19.1_92cf05aba6ca4ea5cbc62b5a7cb924e3_min.js"></script>
 
+    <script type="text/javascript">
+
+    
+            function init() {
+            var tl4 = new TimelineMax();
+
+            tl4
+            .add('logo-in')
+            .to("#moshe", 0.3, { right:1, opacity: 1, autoAlpha: 1, ease: "power1.out(1.7)" }, 'logo-in')
+            .to("#logo", 0.3, { right:50, opacity: 1, autoAlpha: 1, delay:0.2, ease: "power1.in(1.7)" }, 'logo-in');
+            
+        }
+
+        window.onload = init;
+
+    </script>
       </div>
     </main>
     <script>
