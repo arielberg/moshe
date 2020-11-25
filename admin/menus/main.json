@@ -1,7 +1,12 @@
 { 
-    "en":[
-        { "url":"", "label":"Home"},
-        { "url":"about-us", "label":"About Us"},
-        { "url":"posts", "label":"Posts"}
+    "he":[
+        { "url":"", "label":"בית"},
+        { "url":"about-us", "label":"מי אנחנו"},
+        { "url":"posts", "label":"טיפים מקצועיים"},
+        { "url":"posts", "label":"תפילה למשה"},
+        { "url":"posts", "label":"מזכרות ושירונים"},
+        { "url":"posts", "label":"דוגמאות לעבודות"},
+        { "url":"posts", "label":"לקוחות מספרים"},
+        { "url":"posts", "label":"צור קשר"}
     ]
 }
