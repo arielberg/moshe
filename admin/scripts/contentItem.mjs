@@ -95,6 +95,7 @@ export function contentItem ( contentType , ItemId ) {
 
   this.getURL = returnAbsolutePath => {
       let url = (returnAbsolutePath ? '/' : '') + typeData.urlPrefix + this.id;
+      console.log(url);
       return decodeURIComponent(url);
   }
 

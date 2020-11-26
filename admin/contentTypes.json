@@ -13,7 +13,7 @@
     {  
         "name":"work",
         "label":"עבודה",
-        "urlPrefix":"work",
+        "urlPrefix":"work/",
         "labelPlural":"עבודות",
         "labelDefinedPlural":"העבודות",
         "fields":[
@@ -24,7 +24,7 @@
     {  
         "name":"tip",
         "label":"טיפ מקצועי",
-        "urlPrefix":"tip",
+        "urlPrefix":"tip/",
         "labelPlural":"טיפים מקצועים",
         "labelDefinedPlural":"טיפים מקצועים",
         "fields":[
@@ -35,7 +35,7 @@
     {  
         "name":"success",
         "label":"סיפור לקוח",
-        "urlPrefix":"success",
+        "urlPrefix":"success/",
         "labelPlural":"סיפורי לקוחות",
         "labelDefinedPlural":"סיפורי הלקוחות",
         "fields":[

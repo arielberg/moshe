@@ -47,7 +47,7 @@ nav .btn-outline-success:active {
 }
 
 #main {
-  margin-top: 150px;
+  margin-top: 117px;
   background: #fff;
   background: #fffa;
   min-height: CALC( 100vh - 150px );
@@ -68,4 +68,9 @@ body * {
 }
 .fixed-top {
   box-shadow: 0 0 10px #9999;
+}
+
+.logo a {
+  position: relative;
+  top: 1px;
 }

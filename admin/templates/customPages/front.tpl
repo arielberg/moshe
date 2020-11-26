@@ -6,7 +6,7 @@
 <div>
     <div>
         <img id='moshe' src='/assets/images/moshe.jpeg' />
-        <img id='logo' src='/assets/images/logo.jpg' />        
+        <img id='logo' src='/assets/images/logo_full.jpg' />        
     </div>
     <div id="work">
         <div id="i1">
