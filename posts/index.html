@@ -20,7 +20,7 @@
         <ul class='navbar-nav'><li><a href="/">בית</a></li>
 <li><a href="/about-us">מי אנחנו</a></li>
 <li><a href="/posts">טיפים מקצועיים</a></li>
-<li><a href="/posts">תפילה למשה</a></li>
+<li><a href="/work/tfila-lemoshe">תפילה למשה</a></li>
 <li><a href="/posts">מזכרות ושירונים</a></li>
 <li><a href="/posts">דוגמאות לעבודות</a></li>
 <li><a href="/posts">לקוחות מספרים</a></li>
@@ -64,21 +64,20 @@
     </main>
     <script>
       // fix for github pages:
-      let matchGitHubPages = window.location.href.match(/(.*)github.io\/([^/]*)/);
+      let matchGitHubPages = window.location.href.match(/(.*)github.io/([^/]*)/);
       if ( matchGitHubPages ) {
         document.querySelectorAll('[href]').forEach(s=>{
-          if( s.href ) { 
-            s.href = s.href.replace( ( location.origin + location.pathname), matchGitHubPages[0]+'/');
-            console.log(s.href); 
-          }
+            if( s.href ) { 
+                s.href = s.href.replace(  location.origin , matchGitHubPages[0]+'/');
+            }
         });
 
         document.querySelectorAll('[src]').forEach( s => {
-          if( s.src ) { 
-            s.src = s.src.replace( ( location.origin + location.pathname), matchGitHubPages[0] + '/' );
-          }
+            if( s.src ) { 
+                s.src = s.src.replace( location.origin , matchGitHubPages[0] + '/' );
+            }
         });
-      }
+    }
     </script>
 </body>
 </html>

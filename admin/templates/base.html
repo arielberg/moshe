@@ -30,21 +30,20 @@
     </main>
     <script>
       // fix for github pages:
-      let matchGitHubPages = window.location.href.match(/(.*)github.io\\/([^/]*)/);
+      let matchGitHubPages = window.location.href.match(/(.*)github.io\/([^/]*)/);
       if ( matchGitHubPages ) {
         document.querySelectorAll('[href]').forEach(s=>{
-          if( s.href ) { 
-            s.href = s.href.replace( ( location.origin + location.pathname), matchGitHubPages[0]+'/');
-            console.log(s.href); 
-          }
+            if( s.href ) { 
+                s.href = s.href.replace(  location.origin , matchGitHubPages[0]+'/');
+            }
         });
 
         document.querySelectorAll('[src]').forEach( s => {
-          if( s.src ) { 
-            s.src = s.src.replace( ( location.origin + location.pathname), matchGitHubPages[0] + '/' );
-          }
+            if( s.src ) { 
+                s.src = s.src.replace( location.origin , matchGitHubPages[0] + '/' );
+            }
         });
-      }
+    }
     </script>
 </body>
 </html>
