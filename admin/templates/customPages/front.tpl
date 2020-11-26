@@ -1,13 +1,12 @@
-
 <style type="text/css">
     body { padding:0; margin:0;}
-    #logo { position: absolute;right:-250; width:250px;height:250px; }
-    #moshe { position: absolute; top: 33px; right:-250; width:250px;height:250px; border-radius: 50px; }
+    #logo { position: relative; opacity: 0; right:-250; width:250px;height:250px; }
+    #moshe { position: relative; opacity: 0; top: 33px; right:-250; width:250px;height:250px; border-radius: 50px; }
 </style>
 <div>
     <div>
-        <img id='logo' src='/assets/images/logo.jpg' />
         <img id='moshe' src='/assets/images/moshe.jpeg' />
+        <img id='logo' src='/assets/images/logo.jpg' />        
     </div>
     <div id="work">
         <div id="i1">
@@ -27,8 +26,8 @@
 
             tl4
             .add('logo-in')
-            .to("#moshe", 0.3, { right:50, autoAlpha: 1, ease: "power1.out(1.7)" }, 'logo-in')
-            .to("#logo", 0.3, { right:350, autoAlpha: 1, delay:0.2, ease: "power1.in(1.7)" }, 'logo-in');
+            .to("#moshe", 0.3, { right:1, opacity: 1, autoAlpha: 1, ease: "power1.out(1.7)" }, 'logo-in')
+            .to("#logo", 0.3, { right:50, opacity: 1, autoAlpha: 1, delay:0.2, ease: "power1.in(1.7)" }, 'logo-in');
             
         }
 

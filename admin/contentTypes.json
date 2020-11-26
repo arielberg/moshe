@@ -1,21 +1,43 @@
 [
     {  
-        "name":"post",
-        "label":"post",
-        "labelPlural":"posts",
-        "labelDefinedPlural":"posts",
-        "urlPrefix":"post/",
+        "name":"page",
+        "label":"דף",
+        "urlPrefix":"",
+        "labelPlural":"דפים",
+        "labelDefinedPlural":"הדפים",
         "fields":[
             {"name":"image","label":"Image","type":"image", "i18n":false},
-            {"name":"body","label":"body","type":"wysiwyg", "placeholder":"Post Body"}
+            {"name":"body","label":"body","type":"wysiwyg", "placeholder":"Page Body"}           
+        ]
+    }, 
+    {  
+        "name":"work",
+        "label":"עבודה",
+        "urlPrefix":"work",
+        "labelPlural":"עבודות",
+        "labelDefinedPlural":"העבודות",
+        "fields":[
+            {"name":"image","label":"Image","type":"image", "i18n":false},
+            {"name":"body","label":"body","type":"wysiwyg", "placeholder":"Page Body"}           
         ]
     },
     {  
-        "name":"page",
-        "label":"page",
-        "urlPrefix":"",
-        "labelPlural":"pages",
-        "labelDefinedPlural":"pages",
+        "name":"tip",
+        "label":"טיפ מקצועי",
+        "urlPrefix":"tip",
+        "labelPlural":"טיפים מקצועים",
+        "labelDefinedPlural":"טיפים מקצועים",
+        "fields":[
+            {"name":"image","label":"Image","type":"image", "i18n":false},
+            {"name":"body","label":"body","type":"wysiwyg", "placeholder":"Page Body"}           
+        ]
+    },
+    {  
+        "name":"success",
+        "label":"סיפור לקוח",
+        "urlPrefix":"success",
+        "labelPlural":"סיפורי לקוחות",
+        "labelDefinedPlural":"סיפורי הלקוחות",
         "fields":[
             {"name":"image","label":"Image","type":"image", "i18n":false},
             {"name":"body","label":"body","type":"wysiwyg", "placeholder":"Page Body"}           

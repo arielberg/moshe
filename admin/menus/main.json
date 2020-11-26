@@ -3,7 +3,7 @@
         { "url":"", "label":"בית"},
         { "url":"about-us", "label":"מי אנחנו"},
         { "url":"posts", "label":"טיפים מקצועיים"},
-        { "url":"posts", "label":"תפילה למשה"},
+        { "url":"work/tfila-lemoshe", "label":"תפילה למשה"},
         { "url":"posts", "label":"מזכרות ושירונים"},
         { "url":"posts", "label":"דוגמאות לעבודות"},
         { "url":"posts", "label":"לקוחות מספרים"},
