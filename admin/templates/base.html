@@ -28,11 +28,11 @@
           ${ this.content }
       </div>
     </main>
-    
-    <script type="text/javascript">
 
-      // fix for github pages:
-      let devPatterns = [/(.*)github.io\/([^/]*)/ ];
+    <script type="text/javascript">
+      
+      /// fix for github pages:
+      let devPatterns = [/(.*)github.io\\/([^/]*)/ ];
       devPatterns.forEach(function(devPattern){
           let matchGitHubPages = window.location.href.match(devPattern);
           if ( matchGitHubPages ) {
