@@ -54,11 +54,6 @@ nav .btn-outline-success:active {
   padding-top: 15px;
 }
 
-#main .field-image img {
-  float: left;
-  margin-right: 30px;
-}
-
 body {
   background: url(/assets/images/bg.png);
   direction: rtl;
@@ -70,7 +65,17 @@ body * {
   box-shadow: 0 0 10px #9999;
 }
 
-.logo a {
+a.logo {
   position: relative;
   top: 1px;
+}
+
+.field.field-image {
+  float:right;
+}
+
+#main .field-image img {
+  max-width:300px;
+  max-height: 500px;
+  margin: 0 0 50px 50px
 }
