@@ -7,9 +7,9 @@
         <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" media="all">        
         <script type="text/javascript" src="/assets/scripts/main.js"></script>       
         <link rel="icon" href="/assets/images/favicon.ico" sizes="16x16">
-        <title>כזה ראה וקדש - טיפים מקצועיים</title>
+        <title>כזה ראה וקדש - לקוחות מספרים</title>
     </head>
-<body class="tips">
+<body class="success">
   <nav class="navbar navbar-expand-md fixed-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -32,10 +32,10 @@
 
     <main id='main' role="main" class="container">
       <div class="starter-template">
-        <h1>טיפים מקצועיים</h1>          
+        <h1>לקוחות מספרים</h1>          
           <script>
     let basePath = location.origin ;
-    fetch( basePath + '/search/tip.json')
+    fetch( basePath + '/search/success.json')
         .then(res=>res.json())
         .then(res=>res.reverse())
         .then( res => {
@@ -48,6 +48,7 @@
                     jsonItem.dt = Date.parse(jsonItem.date );
                 }
             });
+            console.log(res);
             res
                 .sort((a,b)=>{ return b.dt - a.dt })
                 .forEach( jsonItem=>{
@@ -61,7 +62,6 @@
                     itemDiv.append(itemImage);
                     let itemContent = document.createElement('div');
                     let itemTitle = document.createElement('h3');
-                    itemTitle.onclick = e => { window.location = itemURL }
                     itemTitle.style.cursor = 'pointer';
                     itemTitle.innerText = jsonItem.title;
                     itemContent.append(itemTitle);

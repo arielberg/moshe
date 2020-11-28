@@ -5,6 +5,6 @@
         { "template":"work_items.tpl", "title": "דוגמאות לעבודות", "class": "work-items", "parentTempalte":"base.html", "url":"work-items.html" },
         { "template":"tips.tpl", "title": "טיפים מקצועיים", "class": "tips", "parentTempalte":"base.html", "url":"tips.html" },
         { "template":"contact_us.tpl", "title": "צור קשר", "class": "contact_us", "parentTempalte":"base.html", "url":"contact-us.html" },
-        { "template":"success.tpl", "title": "לקוחות מספרים", "class": "success", "parentTempalte":"base.html", "url":"success.html" }
+        { "template":"success.tpl", "title": "לקוחות מספרים", "class": "success", "parentTempalte":"base.html", "url":"success-stories.html" }
     ]
 }

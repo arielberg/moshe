@@ -18,6 +18,7 @@
         "labelDefinedPlural":"העבודות",
         "fields":[
             {"name":"image","label":"Image","type":"image", "i18n":false},
+            {"name":"ty","label":"סוג העבודה","type":"select", "values":{"sng":"שירון","sv":"מזכרת","sdr":"סידור","exp":"דוגמא"}},
             {"name":"body","label":"body","type":"wysiwyg", "placeholder":"Page Body"}           
         ]
     },

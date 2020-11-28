@@ -150,7 +150,7 @@ export function contentItem ( contentType , ItemId ) {
   this.get404ItemFiles = () => {
     this.title = 'Page does not exists';
     /*** index.html ***/
-    return renderPage( this, ['', 'en'], true )
+    return renderPage( this, [''], true )
     .then(files => {
       /*** index.json ***/
       return files.concat([{
@@ -184,7 +184,7 @@ export function contentItem ( contentType , ItemId ) {
 
                   let strings = {};        
                   translations.forEach(item => strings[item.key] = item.t[language] );
-                  let isDefaultLanguage = language == appSettings.Default_Language;
+                  let isDefaultLanguage = true;
                   let pageDescription = editItemObj.seo.description ? editItemObj.seo.description : strings.SEODefaultDescription;
                   
                   let templateVars = {
@@ -425,7 +425,8 @@ export function contentItemForm ( contentType , editedItem , op ) {
               inputField = document.createElement('select');
               inputField.value = dataObject[field.name];
               Object.keys(field.values).forEach(valueKey=>{
-                inputField.innerHTML += `<option value='${valueKey}'>${field.values[valueKey]}</option>`;
+                let selected = dataObject[field.name] == valueKey ? " selected='selected' " : "";
+                inputField.innerHTML += `<option ${selected} value='${valueKey}'>${field.values[valueKey]}</option>`;
               })
               fieldDiv.appendChild(inputField);
             break;

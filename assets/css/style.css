@@ -79,3 +79,21 @@ a.logo {
   max-height: 500px;
   margin: 0 0 50px 50px
 }
+.result-card {
+  margin-top:25px
+}
+
+.result-card > div {
+  max-width: 700px;
+  display: inline-block;
+}
+.result-card .readMore {
+  margin-right: 20px;;
+}
+.result-card img {
+  cursor: pointer;
+  max-width: 100px;
+  max-height: 150px;
+  margin-left: 11px;
+  vertical-align: top;
+}

@@ -281,3 +281,8 @@ h1 {
   padding: 10px 12px !important;
   font-size: 12px !important;
 }
+
+.preview img {
+    max-width: 120px;
+    max-height: 150px;
+}

@@ -6,7 +6,7 @@
         { "url":"work/tfila-lemoshe", "label":"תפילה למשה"},
         { "url":"songs", "label":"מזכרות ושירונים"},
         { "url":"work-items", "label":"דוגמאות לעבודות"},
-        { "url":"success", "label":"לקוחות מספרים"},
+        { "url":"success-stories", "label":"לקוחות מספרים"},
         { "url":"contact-us", "label":"צור קשר"}
     ]
 }

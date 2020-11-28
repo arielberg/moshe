@@ -54,6 +54,7 @@ const server = http.createServer((req, res) => {
             fs.writeFileSync(fileLocalPath, buf);
           }
           else {              
+            console.log(require('path').dirname(fileLocalPath).replace('//','/'));
             fs.mkdir( require('path').dirname(fileLocalPath).replace('//','/') , { recursive: true }, (err) => { });
             fs.writeFileSync( fileLocalPath, fileData.content, (err,data) => {});
           }
