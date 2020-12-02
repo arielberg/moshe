@@ -63,7 +63,9 @@
                     let itemURL = '/'+(jsonItem.href ? jsonItem.href : 'post/' + jsonItem.id);
                     itemDiv.className = "result-card";
                     let itemImage = document.createElement('img');
-                    itemImage.src = '/'+ (jsonItem.image?jsonItem.image:'assets/images/post_default.jpeg')
+                    itemImage.src = basePath + '/'+ (jsonItem.image?jsonItem.image:'assets/images/post_default.jpeg');
+                    console.log(itemImage);
+
                     itemImage.onclick = e => { window.location = itemURL }
                     itemImage.style.cursor = 'pointer';
                     itemDiv.append(itemImage);
