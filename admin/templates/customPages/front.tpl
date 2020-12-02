@@ -10,7 +10,6 @@
     </div>
     <div id="work">
         <div id="i1">
-            njzurho
         </div>
         <div id="i2">
         </div>

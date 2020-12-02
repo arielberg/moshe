@@ -25,7 +25,7 @@
                 .sort((a,b)=>{ return b.dt - a.dt })
                 .forEach( jsonItem=>{
                     let itemDiv = document.createElement('div');
-                    let itemURL = '/'+(jsonItem.href ? jsonItem.href : 'post/' + jsonItem.id);
+                    let itemURL = basePath+'/'+(jsonItem.href ? jsonItem.href : 'post/' + jsonItem.id);
                     itemDiv.className = "result-card";
                     let itemImage = document.createElement('img');
                     itemImage.src = basePath + '/'+ (jsonItem.image?jsonItem.image:'assets/images/post_default.jpeg');

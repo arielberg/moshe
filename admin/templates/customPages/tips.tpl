@@ -1,5 +1,12 @@
 <script>
     let basePath = location.origin ;
+    
+    let matchGitHubPages = window.location.href.match([/(.*)github.io\\/([^/]*)/ ]);
+    if ( matchGitHubPages ) {
+        basePath  = basePath.replace( location.origin , matchGitHubPages[0] );
+              
+    }
+
     fetch( basePath + '/search/tip.json')
         .then(res=>res.json())
         .then(res=>res.reverse())
@@ -17,10 +24,10 @@
                 .sort((a,b)=>{ return b.dt - a.dt })
                 .forEach( jsonItem=>{
                     let itemDiv = document.createElement('div');
-                    let itemURL = '/'+(jsonItem.href ? jsonItem.href : 'post/' + jsonItem.id);
+                    let itemURL = basePath+'/'+(jsonItem.href ? jsonItem.href : 'post/' + jsonItem.id);
                     itemDiv.className = "result-card";
                     let itemImage = document.createElement('img');
-                    itemImage.src = '/'+ (jsonItem.image?jsonItem.image:'assets/images/post_default.jpeg')
+                    itemImage.src = basePath+'/'+ (jsonItem.image?jsonItem.image:'assets/images/post_default.jpeg')
                     itemImage.onclick = e => { window.location = itemURL }
                     itemImage.style.cursor = 'pointer';
                     itemDiv.append(itemImage);
