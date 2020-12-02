@@ -1,5 +1,12 @@
 <script>
     let basePath = location.origin ;
+    
+    let matchGitHubPages = window.location.href.match([/(.*)github.io\\/([^/]*)/ ]);
+    if ( matchGitHubPages ) {
+        basePath  = basePath.replace( location.origin , matchGitHubPages[0] );
+              
+    }
+    
     fetch( basePath + '/search/work.json')
         .then(res=>res.json())
         .then(res=>res.reverse())
